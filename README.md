@@ -1,6 +1,6 @@
 # Pizzaria-UNIFAA
 
-você deve criar um site simples para a pizzaria com a seguinte estrutura:
+Você deve criar um site simples para a pizzaria com a seguinte estrutura:
 
 - Criar a estrutura do site.
 
