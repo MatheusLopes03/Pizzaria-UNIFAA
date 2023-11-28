@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;300;400;500;600;800&display=swap');
+
+:root {
+    --green: #00a782;
+    --dark: #0E1715;
+    --white: #f7f5f3;
+    --light-bg: #f6efe8;
+    --light-color: #a0a0a0;
+    --border: .1rem solid var(var(--light-color));
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+* {
+    font-family: 'Smooch Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+body {
+    background: var(--light-bg);
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.9rem;
+    font-weight:700;
+    color: var(--white);
+    background-color: var(--green);
+    cursor: pointer;
+}   
+
+.btn:hover{
+    background-color: #025745;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+
+#unifaa {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.header .flex .navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.header .flex .navbar a:hover {
+    color: var(--green);
+}
+
+.header .flex .icons>div {
+    font-size: 1.6rem;
+    color: var(--dark);
+    cursor: pointer;
+    margin-left: 1.7rem;
+}
+
+.header .flex .icons>div:hover {
+    color: var(--green);
+}
+
+.header .flex .icons>div span {
+    font-size: 1.5rem;
+}
+
+.user-account{
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 100%;
+    z-index: 1100;
+    background-color: var(--white);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.user-account.active{
+    right: 0;
+}
+
+.user-account #close-account{
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.user-account #close-account span{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--green);
+    text-decoration: underline;
+}
+.user-account #close-account span:hover{
+    color: var(--dark);
+}
+
+.user-account .user{
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    margin: 2rem 0;
+}
+
+.user-account .user p{
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.user-account .user p span{
+    color: rgb(241, 69, 46);
+}
+
+.user-account .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.user-account .flex form{
+    flex: 1 1 40rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--light-bg);
+}
+
+.user-account .flex form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
+}
+
+.user-account .flex form .box{
+    width: 100%;
+    margin: .9rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    font-size: 1.7rem;
+    color: var(--dark);
+}

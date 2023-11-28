@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria UNIFAA</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- header section -->
+
+    <header class="header">
+        <section class="flex">
+            <!-- TROCAR POR IMG COM LOGO -->
+            <a href="#home" class="logo"><span id="unifaa">UNIFAA</span>PIZZA</a>
+
+            <nav class="navbar">
+                <a href="#home">inicio</a>
+                <a href="#about">sobre nos</a>
+                <a href="#menu">cardapio</a>
+                <a href="#order">pedido</a>
+            </nav>
+
+            <div class="icons">
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- header section -->
+
+    <div class="user-account">
+
+        <section>
+            <div id="close-account"><span>fechar</span></div>
+
+            <div class="user">
+                <p><span>Voce não esta conectado!</span></p>
+            </div>
+
+            <div class="flex">
+
+                <!-- form login -->
+                <form action="" method="post">
+                    <h3>Conectar-se</h3>
+                    <input type="text" name="name" required class="box" placeholder="Usuario" maxlength="20">
+                    <input type="password" name="pass" required class="box" placeholder="Senha" maxlength="20">
+                    <input type="submit" value="Conectar" name="login" class="btn">
+                </form>
+
+                <!-- form cadastro -->
+                <form action="" method="post">
+                    <h3>Crie sua conta</h3>
+                    <input type="text" name="name" required class="box" placeholder="Usuario" maxlength="20">
+                    <input type="email" name="email" required class="box" placeholder="E-mail" maxlength="50">
+                    <input type="password" name="pass" required class="box" placeholder="Senha" maxlength="20">
+                    <input type="password" name="cpass" required class="box" placeholder="Confirme sua senha" maxlength="20">
+                    <input type="submit" value="Registrar" name="register" class="btn">
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
