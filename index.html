@@ -9,6 +9,7 @@
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -31,13 +32,15 @@
 
             <div class="icons">
                 <div id="user-btn" class="fas fa-user"></div>
-                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(1)</span></div>
             </div>
 
         </section>
     </header>
 
     <!-- header section -->
+
+    <!-- cadastro -->
 
     <div class="user-account">
 
@@ -48,34 +51,85 @@
                 <p><span>Voce não esta conectado!</span></p>
             </div>
 
-            <div class="flex">
+            <div class="container">
+                <div class="buttonsForm">
+                    <div class="btnColor"></div>
+                    <button id="btnSignin">Entrar</button>
+                    <button id="btnSignup">Cadastrar</button>
+                </div>
 
-                <!-- form login -->
-                <form action="" method="post">
-                    <h3>Conectar-se</h3>
-                    <input type="text" name="name" required class="box" placeholder="Usuario" maxlength="20">
-                    <input type="password" name="pass" required class="box" placeholder="Senha" maxlength="20">
-                    <input type="submit" value="Conectar" name="login" class="btn">
+                <form id="signin">
+                    <input type="text" placeholder="Email" required />
+                    <i class="fas fa-envelope iEmail"></i>
+                    <input type="password" placeholder="Password" required />
+                    <i class="fas fa-lock iPassword"></i>
+                    <div class="divCheck">
+                        <input type="checkbox" />
+                        <span>Lembrar senha</span>
+                    </div>
+                    <button type="submit">Entrar</button>
                 </form>
 
-                <!-- form cadastro -->
-                <form action="" method="post">
-                    <h3>Crie sua conta</h3>
-                    <input type="text" name="name" required class="box" placeholder="Usuario" maxlength="20">
-                    <input type="email" name="email" required class="box" placeholder="E-mail" maxlength="50">
-                    <input type="password" name="pass" required class="box" placeholder="Senha" maxlength="20">
-                    <input type="password" name="cpass" required class="box" placeholder="Confirme sua senha" maxlength="20">
-                    <input type="submit" value="Registrar" name="register" class="btn">
+                <form id="signup">
+                    <input type="text" placeholder="Email" required />
+                    <i class="fas fa-envelope iEmail"></i>
+                    <input type="password" placeholder="Password" required />
+                    <i class="fas fa-lock iPassword"></i>
+                    <input type="password" placeholder="Password" required />
+                    <i class="fas fa-lock iPassword2"></i>
+                    <button type="submit">Cadastrar</button>
                 </form>
             </div>
-        </section>
+    </div>
+    </section>
 
     </div>
 
+    <!-- cadastro -->
 
+    <!-- carrinho -->
+
+    <div class="shopping-cart">
+
+        <section>
+
+            <div id="close-cart"><span>fechar</span></div>
+
+            <div class="box">
+                <a href="#" class="fas fa-times"></a>
+                <img src="assets/pizza-1.jpg" alt="">
+                <div class="content">
+                    <p>pizza <span>R$ 5,00</span></p>
+                </div>
+            </div>
+            <a href="#order" class="btn">pedir agora</a>
+
+        </section>
+    </div>
+
+    <!-- carrinho -->
+
+    <!-- home -->
+
+    <div class="head" id="home">
+      <div class="head-left-side">
+        <h1>Experimente agora <br/>Nossas pizzas</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eveniet consequatur soluta unde quae debitis facilis. 
+            Rerum quasi earum inventore voluptatibus facere quaerat neque omnis!
+        </p>
+        <button id="btn-home">Faca seu pedido</button>
+      </div>
+      <div class="head-right-side">
+        <img src="assets/home-img-2.png" alt="pizza-image">
+      </div>
+    </div>
+   
 
     <!-- javascript -->
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 
 </body>
 

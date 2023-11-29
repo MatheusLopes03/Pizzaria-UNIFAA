@@ -10,7 +10,7 @@
 
 ## Implementar as seguintes features:
 
--  Efetuar Pedido
+- Efetuar Pedido
 
 - Carrinho
 
