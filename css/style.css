@@ -227,11 +227,11 @@ input[type="password"] {
 button[type="submit"] {
   background: var(--green);
   font-size: 2rem;
-  color:var(--white);
+  color: var(--white);
   border-radius: .7rem;
   width: 100%;
   outline: none;
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
   font-weight: 600;
   margin-top: 2rem;
   text-transform: capitalize;
@@ -274,7 +274,7 @@ i {
 
 /* carrinho */
 
-.shopping-cart{
+.shopping-cart {
   position: fixed;
   top: 0;
   right: -110%;
@@ -286,27 +286,27 @@ i {
   overflow-y: scroll;
 }
 
-.shopping-cart.active{
+.shopping-cart.active {
   right: 0;
 }
 
-.shopping-cart #close-cart{
+.shopping-cart #close-cart {
   text-align: right;
   margin-bottom: 2.5rem;
 }
 
-.shopping-cart #close-cart span{
+.shopping-cart #close-cart span {
   cursor: pointer;
   font-size: 2rem;
   color: var(--green);
   text-decoration: underline;
 }
 
-.shopping-cart #close-cart span:hover{
+.shopping-cart #close-cart span:hover {
   color: var(--dark);
 }
 
-.shopping-cart .box{
+.shopping-cart .box {
   display: flex;
   position: relative;
   align-items: center;
@@ -318,7 +318,7 @@ i {
   margin: 1.5rem 0;
 }
 
-.shopping-cart .box .fa-times{
+.shopping-cart .box .fa-times {
   position: absolute;
   top: 1rem;
   right: 1.2rem;
@@ -327,34 +327,34 @@ i {
   color: var(--green);
 }
 
-.shopping-cart .box img{
+.shopping-cart .box img {
   width: 7rem;
 }
 
-.shopping-cart .box .content p{
+.shopping-cart .box .content p {
   font-size: 1.9rem;
   color: var(--light-color);
 }
 
-.shopping-cart .box .content p span{
+.shopping-cart .box .content p span {
   color: var(--green);
 }
 
-.btn{
-   display: block;
-   width: 100%;
-   margin-top: 1rem;
-   border-radius: .5rem;
-   padding:1rem 2rem;
-   font-size: 2rem;
-   color:var(--white);
-   background-color: var(--green);
-   cursor: pointer;
-   text-transform: capitalize;
-   text-align: center;
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
 }
 
-.head{
+.head {
   display: flex;
   padding: 8% 5%;
   justify-content: center;
@@ -362,16 +362,16 @@ i {
   background: url(../assets/home-bg.png);
 }
 
-.head .head-left-side{
+.head .head-left-side {
   padding-left: 9%;
 }
 
-.head .head-left-side h1{
+.head .head-left-side h1 {
   font-size: 7rem;
   color: var(--dark);
 }
 
-.head .head-left-side p{
+.head .head-left-side p {
   max-width: 600px;
   color: var(--white);
   padding: 30px 0;
@@ -379,7 +379,7 @@ i {
   font-size: 2.4rem;
 }
 
-.head .head-right-side img{
+.head .head-right-side img {
   max-width: 70%;
   height: auto;
   margin-left: 120px;
@@ -387,24 +387,81 @@ i {
 }
 
 @keyframes RotateImg {
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-#btn-home{
-   display: block;
-   border-radius: .5rem;
-   padding: 1rem 2rem;
-   font-size: 2rem;
-   color:var(--white);
-   background-color: var(--dark);
-   cursor: pointer;
-   text-transform: capitalize;
-   text-align: center;
+#btn-home {
+  display: block;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--dark);
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
 }
 
-#btn-home:hover{
+#btn-home:hover {
   background-color: #000000;
   color: var(--green);
+}
+
+.heading {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.about .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about .box-container .box {
+  background-color: var(--white);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.about .box-container .box img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.about .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+
+.about .box-container .box p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+.btn-about {
+  display: block;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-about:hover {
+  background-color: var(--dark);
 }
