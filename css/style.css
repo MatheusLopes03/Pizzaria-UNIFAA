@@ -174,7 +174,7 @@ section {
   box-shadow: var(--box-shadow);
 }
 
-form {
+.container form{
   position: absolute;
   margin-top: 80px;
   transition: .5s;
@@ -464,4 +464,79 @@ i {
 
 .btn-about:hover {
   background-color: var(--dark);
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.menu .box-container .box {
+  background-color: var(--white);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.menu .box-container .box img {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.menu .box-container .box .price {
+  background-color: var(--dark);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1.7rem;
+  color: var(--white);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.menu .box-container .box .price span {
+  font-size: 2.5rem;
+}
+
+.menu .box-container .box .name {
+  font-size: 2.3rem;
+  color: var(--dark);
+  margin: .5rem 0;
+}
+
+.menu .box-container .box form{
+  display: flex;
+  gap: 1rem;
+}
+
+.menu .box-container .box form .qty{
+  width: 6rem;
+  border:var(--border);
+  background-color: var(--light-bg);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  color:var(--dark);
+}
+
+.btn-menu {
+  display: block;
+  border-radius: .5rem;
+  padding: 1rem 4.5rem;
+  font-size: 1.9rem;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-menu:hover{
+  background-color: #04483a;
 }
